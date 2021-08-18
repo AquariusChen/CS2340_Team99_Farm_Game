@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="922.0" stylesheets="@../cssFiles/setFont.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.welcome.WelcomeController">
+   <children>
+      <ImageView id="enter" fitHeight="705.0" fitWidth="940.0" layoutX="-9.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/welcome.PNG" />
+         </image>
+      </ImageView>
+      <Line endX="170.0" layoutX="483.0" layoutY="291.0" opacity="0.42" startX="-170.0" stroke="WHITE" />
+      <Text fill="WHITE" layoutX="304.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="welcome_title" text=" F   A   R   M" textAlignment="CENTER">
+         <font>
+            <Font name="swfit_slm_fw" size="41.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="289.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="welcome_title" text="WELCOME TO 4399" textAlignment="CENTER" wrappingWidth="396.623779296875">
+         <font>
+            <Font name="swfit_slm_fw" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="447.0" layoutY="671.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="= ENTER =">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button id="enter" fx:id="enter" alignment="CENTER" blendMode="LIGHTEN" contentDisplay="CENTER" depthTest="ENABLE" layoutX="425.0" layoutY="630.0" mnemonicParsing="false" onAction="#goToConfiguration" prefHeight="59.0" prefWidth="116.0" style="-fx-background-color: transparent;" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>

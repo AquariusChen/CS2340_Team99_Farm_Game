@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="922.0" stylesheets="@../cssFiles/setFont.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.win.WinningController">
+   <children>
+      <ImageView id="enter" fitHeight="705.0" fitWidth="940.0" layoutX="-17.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/welcome.PNG" />
+         </image>
+      </ImageView>
+      <Line endX="170.0" layoutX="444.0" layoutY="266.0" opacity="0.42" startX="-170.0" stroke="WHITE" />
+      <Text fill="WHITE" layoutX="182.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="welcome_title" text="CONGRATULATIONS" textAlignment="CENTER">
+         <font>
+            <Font name="swfit_slm_fw" size="41.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="263.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="welcome_title" text="You now have money to pay for your GT tuition!" textAlignment="CENTER" wrappingWidth="386.2237548828125">
+         <font>
+            <Font name="swfit_slm_fw" size="27.0" />
+         </font>
+      </Text>
+      <ImageView id="enter" fitHeight="70.0" fitWidth="89.0" layoutX="145.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/money.png" />
+         </image>
+      </ImageView>
+      <ImageView id="enter" fitHeight="50.0" fitWidth="45.0" layoutX="407.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/seed.png" />
+         </image>
+      </ImageView>
+      <ImageView id="enter" fitHeight="50.0" fitWidth="34.0" layoutX="301.0" layoutY="462.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/water/water.png" />
+         </image>
+      </ImageView>
+      <ImageView id="enter" fitHeight="50.0" fitWidth="47.0" layoutX="530.0" layoutY="462.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/M5/fertilizer.png" />
+         </image>
+      </ImageView>
+      <ImageView id="enter" fitHeight="55.0" fitWidth="53.0" layoutX="640.0" layoutY="462.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/M5/pesticide.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="totalMoney" fill="WHITE" layoutX="203.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="1000">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalWater" fill="WHITE" layoutX="343.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="10">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalPlant" fill="WHITE" layoutX="459.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="10">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalFertilizer" fill="WHITE" layoutX="582.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="10">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalPesticide" fill="WHITE" layoutX="699.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="10">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="restartW" layoutX="416.0" layoutY="646.0" mnemonicParsing="false" onAction="#goToWelcome" style="-fx-background-color: transparent; -fx-font-size: 20;" text="Restart" textFill="WHITE" />
+   </children>
+</Pane>

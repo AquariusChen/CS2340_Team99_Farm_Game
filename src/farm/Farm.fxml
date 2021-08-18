@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="922.0" stylesheets="@../cssFiles/setFont.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.farm.FarmController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="922.0">
+         <image>
+            <Image url="@../../images/Farm_BKG.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="364.0" layoutY="202.0">
+         <image>
+            <Image url="@../../images/landUnit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="364.0" layoutY="92.0">
+         <image>
+            <Image url="@../../images/landUnit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="474.0" layoutY="92.0">
+         <image>
+            <Image url="@../../images/landUnit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="474.0" layoutY="202.0">
+         <image>
+            <Image url="@../../images/landUnit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="636.0" layoutY="93.0">
+         <image>
+            <Image url="@../../images/landUnit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="636.0" layoutY="203.0">
+         <image>
+            <Image url="@../../images/landUnit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="746.0" layoutY="93.0">
+         <image>
+            <Image url="@../../images/landUnit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="746.0" layoutY="203.0">
+         <image>
+            <Image url="@../../images/landUnit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="636.0" layoutY="340.0">
+         <image>
+            <Image url="@../../images/landUnit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="749.0" layoutY="340.0">
+         <image>
+            <Image url="@../../images/landUnit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="636.0" layoutY="450.0">
+         <image>
+            <Image url="@../../images/landUnit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="60.0" layoutX="50.0" layoutY="600.0">
+         <image>
+            <Image url="@../../images/money.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="749.0" layoutY="450.0">
+         <image>
+            <Image url="@../../images/landUnit.png" />
+         </image>
+      </ImageView>
+      <ImageView id="plant" fx:id="plant" fitHeight="50.0" fitWidth="50.0" layoutX="630.0" layoutY="607.0" onMouseClicked="#plantSeed" rotate="15.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <image>
+            <Image url="@../../images/seed.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="day" layoutX="376.0" layoutY="647.0" onMouseClicked="#goToNextDay" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="DAY 1">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="money" layoutX="110.0" layoutY="647.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="500">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="seed" layoutX="699.0" layoutY="647.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Watermelon" wrappingWidth="206.904052734375">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="276.0" fitWidth="200.0" layoutX="61.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/RedBarn.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="261.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/4399_FARM_Board.png" />
+         </image>
+      </ImageView>
+      <ImageView id="farmPlot1" fx:id="farmPlot1" fitHeight="104.0" fitWidth="96.0" layoutX="381.0" layoutY="105.0" onMouseClicked="#clickOnPlot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/emptyBKG.png" />
+         </image></ImageView>
+      <ImageView id="farmPlot3" fx:id="farmPlot3" fitHeight="104.0" fitWidth="96.0" layoutX="381.0" layoutY="215.0" onMouseClicked="#clickOnPlot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/emptyBKG.png" />
+         </image></ImageView>
+      <ImageView id="farmPlot2" fx:id="farmPlot2" fitHeight="104.0" fitWidth="96.0" layoutX="491.0" layoutY="105.0" onMouseClicked="#clickOnPlot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/emptyBKG.png" />
+         </image></ImageView>
+      <ImageView id="farmPlot4" fx:id="farmPlot4" fitHeight="104.0" fitWidth="96.0" layoutX="491.0" layoutY="215.0" onMouseClicked="#clickOnPlot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/emptyBKG.png" />
+         </image></ImageView>
+      <ImageView id="farmPlot8" fx:id="farmPlot8" fitHeight="104.0" fitWidth="96.0" layoutX="764.0" layoutY="217.0" onMouseClicked="#clickOnPlot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/emptyBKG.png" />
+         </image></ImageView>
+      <ImageView id="farmPlot6" fx:id="farmPlot6" fitHeight="104.0" fitWidth="96.0" layoutX="764.0" layoutY="109.0" onMouseClicked="#clickOnPlot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/emptyBKG.png" />
+         </image></ImageView>
+      <ImageView id="farmPlot7" fx:id="farmPlot7" fitHeight="104.0" fitWidth="96.0" layoutX="654.0" layoutY="219.0" onMouseClicked="#clickOnPlot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/emptyBKG.png" />
+         </image></ImageView>
+      <ImageView id="farmPlot5" fx:id="farmPlot5" fitHeight="104.0" fitWidth="96.0" layoutX="654.0" layoutY="109.0" onMouseClicked="#clickOnPlot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/emptyBKG.png" />
+         </image></ImageView>
+      <ImageView id="farmPlot9" fx:id="farmPlot9" fitHeight="104.0" fitWidth="96.0" layoutX="654.0" layoutY="357.0" onMouseClicked="#clickOnPlot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/emptyBKG.png" />
+         </image></ImageView>
+      <ImageView id="farmPlot11" fx:id="farmPlot11" fitHeight="104.0" fitWidth="96.0" layoutX="654.0" layoutY="464.0" onMouseClicked="#clickOnPlot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/emptyBKG.png" />
+         </image></ImageView>
+      <ImageView id="farmPlot10" fx:id="farmPlot10" fitHeight="104.0" fitWidth="96.0" layoutX="766.0" layoutY="354.0" onMouseClicked="#clickOnPlot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/emptyBKG.png" />
+         </image></ImageView>
+      <ImageView id="farmPlot12" fx:id="farmPlot12" fitHeight="104.0" fitWidth="96.0" layoutX="766.0" layoutY="467.0" onMouseClicked="#clickOnPlot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/emptyBKG.png" />
+         </image></ImageView>
+      <Button id="goToInv" fx:id="goToInv" layoutX="86.0" layoutY="155.0" mnemonicParsing="false" onAction="#goToInventory" opacity="0.0" prefHeight="188.0" prefWidth="120.0" style="-fx-background-color: transparent;" text="goToInv">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button id="goToMarket" fx:id="goToMarket" layoutX="284.0" layoutY="367.0" mnemonicParsing="false" onAction="#goToMarket" prefHeight="32.0" prefWidth="73.0" rotate="10.0" style="-fx-background-color: transparent; -fx-font-size: 16;" text="Market">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="message" layoutX="92.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" wrappingWidth="137.22900390625">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="watering" fitHeight="61.0" fitWidth="45.0" layoutX="58.0" layoutY="24.0">
+         <image>
+            <Image url="@../../images/water/water.png" />
+         </image>
+      </ImageView>
+      <Button id="water" fx:id="water" layoutX="58.0" layoutY="20.0" mnemonicParsing="false" onAction="#waterPlant" prefHeight="61.0" prefWidth="45.0" style="-fx-background-color: transparent; -fx-font-size: 16;">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="plot1WaterLevel" fitHeight="21.0" fitWidth="120.0" layoutX="369.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/water/water_level_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plot2WaterLevel" fitHeight="21.0" fitWidth="120.0" layoutX="479.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/water/water_level_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plot3WaterLevel" fitHeight="21.0" fitWidth="120.0" layoutX="368.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/water/water_level_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plot4WaterLevel" fitHeight="21.0" fitWidth="120.0" layoutX="479.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/water/water_level_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plot5WaterLevel" fitHeight="21.0" fitWidth="120.0" layoutX="641.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/water/water_level_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plot6WaterLevel" fitHeight="21.0" fitWidth="120.0" layoutX="751.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/water/water_level_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plot7WaterLevel" fitHeight="21.0" fitWidth="120.0" layoutX="641.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/water/water_level_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plot8WaterLevel" fitHeight="21.0" fitWidth="120.0" layoutX="751.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/water/water_level_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plot9WaterLevel" fitHeight="21.0" fitWidth="120.0" layoutX="641.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/water/water_level_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plot10WaterLevel" fitHeight="21.0" fitWidth="120.0" layoutX="754.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/water/water_level_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plot11WaterLevel" fitHeight="21.0" fitWidth="120.0" layoutX="641.0" layoutY="544.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/water/water_level_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plot12WaterLevel" fitHeight="21.0" fitWidth="120.0" layoutX="754.0" layoutY="544.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/water/water_level_1.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="reminder" layoutX="380.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" wrappingWidth="200.0000000000001">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="689.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/M5/fertilizer.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="fertilizerQuantity" layoutX="778.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="0" wrappingWidth="105.1495361328125">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="fertilizerQuantity1" layoutX="753.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 28;" styleClass="text" text="x" wrappingWidth="14.8359375">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text id="random event" fx:id="randomEventMessage" layoutX="26.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" textAlignment="CENTER" wrappingWidth="323.22900390625">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="lowSkillWorker" fitHeight="163.0" fitWidth="96.0" layoutX="388.0" layoutY="414.0" onMouseClicked="#lowSkillWork" pickOnBounds="true" preserveRatio="true" style="visibility: false;">
+         <image>
+            <Image url="@../../images/M5/worker_ls.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="highSkillWorker" fitHeight="163.0" fitWidth="105.0" layoutX="490.0" layoutY="414.0" onMouseClicked="#highSkillWork" pickOnBounds="true" preserveRatio="true" style="visibility: false;">
+         <image>
+            <Image url="@../../images/M5/worker_hs.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="lsText" layoutX="414.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: false;" styleClass="text" text="Low Skill" />
+      <Text id="text" fx:id="hsText" layoutX="502.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: false;" text="High Skill" />
+      <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="470.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/M5/pesticide.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="fertilizerQuantity11" layoutX="535.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 28;" styleClass="text" text="x" wrappingWidth="14.8359375">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text fx:id="pesticideQuantity" layoutX="559.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="0" wrappingWidth="61.97967529296875">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button id="fert" fx:id="fertilize" layoutX="691.0" layoutY="24.0" mnemonicParsing="false" onAction="#fertilizing" prefHeight="55.0" prefWidth="48.0" style="-fx-background-color: transparent; -fx-font-size: 16;">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button id="pest" fx:id="pesticideButton" layoutX="481.0" layoutY="25.0" mnemonicParsing="false" onAction="#pesting" prefHeight="53.0" prefWidth="34.0" rotate="20.6" style="-fx-background-color: transparent; -fx-font-size: 16;">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="tip1" layoutX="458.0" layoutY="110.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-font-size: 10;" stylesheets="@../cssFiles/setFont.css">
+         <tooltip>
+            <Tooltip style="fx-font-size: 30;" text="Fertilizer Level: 0" />
+         </tooltip>
+      </Button>
+      <Button fx:id="tip2" layoutX="571.0" layoutY="109.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-font-size: 10;" stylesheets="@../cssFiles/setFont.css">
+         <tooltip>
+            <Tooltip style="fx-font-size: 30;" text="Fertilizer Level: 0" />
+         </tooltip>
+      </Button>
+      <Button fx:id="tip3" layoutX="458.0" layoutY="221.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-font-size: 10;" stylesheets="@../cssFiles/setFont.css">
+         <tooltip>
+            <Tooltip style="fx-font-size: 30;" text="Fertilizer Level: 0" />
+         </tooltip>
+      </Button>
+      <Button fx:id="tip4" layoutX="571.0" layoutY="222.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-font-size: 10;" stylesheets="@../cssFiles/setFont.css">
+         <tooltip>
+            <Tooltip style="fx-font-size: 30;" text="Fertilizer Level: 0" />
+         </tooltip>
+      </Button>
+      <Button fx:id="tip5" layoutX="729.0" layoutY="109.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-font-size: 10;" stylesheets="@../cssFiles/setFont.css">
+         <tooltip>
+            <Tooltip style="fx-font-size: 30;" text="Fertilizer Level: 0" />
+         </tooltip>
+      </Button>
+      <Button fx:id="tip6" layoutX="840.0" layoutY="112.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-font-size: 10;" stylesheets="@../cssFiles/setFont.css">
+         <tooltip>
+            <Tooltip style="fx-font-size: 30;" text="Fertilizer Level: 0" />
+         </tooltip>
+      </Button>
+      <Button fx:id="tip7" layoutX="730.0" layoutY="220.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-font-size: 10;" stylesheets="@../cssFiles/setFont.css">
+         <tooltip>
+            <Tooltip style="fx-font-size: 30;" text="Fertilizer Level: 0" />
+         </tooltip>
+      </Button>
+      <Button fx:id="tip8" layoutX="840.0" layoutY="220.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-font-size: 10;" stylesheets="@../cssFiles/setFont.css">
+         <tooltip>
+            <Tooltip style="fx-font-size: 30;" text="Fertilizer Level: 0" />
+         </tooltip>
+      </Button>
+      <Button fx:id="tip9" layoutX="731.0" layoutY="359.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-font-size: 10;" stylesheets="@../cssFiles/setFont.css">
+         <tooltip>
+            <Tooltip style="fx-font-size: 30;" text="Fertilizer Level: 0" />
+         </tooltip>
+      </Button>
+      <Button fx:id="tip10" layoutX="841.0" layoutY="359.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-font-size: 10;" stylesheets="@../cssFiles/setFont.css">
+         <tooltip>
+            <Tooltip style="fx-font-size: 30;" text="Fertilizer Level: 0" />
+         </tooltip>
+      </Button>
+      <Button fx:id="tip11" layoutX="729.0" layoutY="471.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-font-size: 10;" stylesheets="@../cssFiles/setFont.css">
+         <tooltip>
+            <Tooltip style="fx-font-size: 30;" text="Fertilizer Level: 0" />
+         </tooltip>
+      </Button>
+      <Button fx:id="tip12" layoutX="841.0" layoutY="471.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-font-size: 10;" stylesheets="@../cssFiles/setFont.css">
+         <tooltip>
+            <Tooltip style="fx-font-size: 30;" text="Fertilizer Level: 0" />
+         </tooltip>
+      </Button>
+      <ImageView fx:id="unlockPlot" fitHeight="63.0" fitWidth="56.0" layoutX="276.0" layoutY="132.0" onMouseClicked="#buyLockedPlot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/key.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="plotPrice" layoutX="305.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="20">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="49.0" fitWidth="43.0" layoutX="265.0" layoutY="190.0">
+         <image>
+            <Image url="@../../images/money.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="waterQuantity" layoutX="138.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="5" wrappingWidth="55.81500244140625">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="tractor" fitHeight="70.0" fitWidth="101.0" layoutX="522.0" layoutY="507.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../images/tractor.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="harvestQuantity" layoutX="354.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="5" wrappingWidth="43.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button id="water" fx:id="water1" layoutX="285.0" layoutY="73.0" mnemonicParsing="false" onAction="#waterPlant" prefHeight="61.0" prefWidth="45.0" style="-fx-background-color: transparent; -fx-font-size: 16;">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="280.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/harvest.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="fertilizerQuantity111" layoutX="112.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 28;" styleClass="text" text="x" wrappingWidth="14.8359375">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text fx:id="fertilizerQuantity1111" layoutX="328.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 28;" styleClass="text" text="x" wrappingWidth="14.8359375">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+
+   </children>
+</AnchorPane>

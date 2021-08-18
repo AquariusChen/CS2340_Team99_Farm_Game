@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="922.0" stylesheets="@../cssFiles/setFont.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.configuration.ConfigurationController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="922.0">
+         <image>
+            <Image url="@../../images/background2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="197.0" layoutX="347.0" layoutY="92.0">
+         <image>
+            <Image url="@../../images/namebg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="441.0" layoutX="271.0" layoutY="528.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/seasonbg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="394.0" layoutX="264.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/speedbg.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="411.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="NAME">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="326.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="STARTING SEED TYPE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="323.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="STARTING SEASON">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+
+       <RadioButton fx:id="r2Seed" layoutX="355.0" layoutY="475.0" style="-fx-font-size: 27;" text="Watermelon">
+         <toggleGroup>
+            <ToggleGroup fx:id="tgSeed" />
+         </toggleGroup>
+         <font>
+            <Font size="13.0" />
+         </font>
+       </RadioButton>
+       <RadioButton fx:id="r1Seed" layoutX="220.0" layoutY="475.0" style="-fx-font-size: 27;" text="Radish">
+           <toggleGroup>
+               <fx:reference source="tgSeed" />
+           </toggleGroup>
+         <font>
+            <Font size="13.0" />
+         </font>
+       </RadioButton>
+       <RadioButton fx:id="r3Seed" layoutX="558.0" layoutY="475.0" style="-fx-font-size: 27;" text="Eggplant">
+           <toggleGroup>
+               <fx:reference source="tgSeed" />
+           </toggleGroup>
+         <font>
+            <Font size="13.0" />
+         </font>
+       </RadioButton>
+
+       <RadioButton fx:id="r2Season" layoutX="324.0" layoutY="620.0" style="-fx-font-size: 27;" text="summer">
+           <toggleGroup>
+               <ToggleGroup fx:id="tgSeason" />
+           </toggleGroup>
+         <font>
+            <Font size="13.0" />
+         </font>
+       </RadioButton>
+       <RadioButton fx:id="r1Season" layoutX="194.0" layoutY="620.0" style="-fx-font-size: 27;" text="SPRING">
+           <toggleGroup>
+               <fx:reference source="tgSeason" />
+           </toggleGroup>
+         <font>
+            <Font size="13.0" />
+         </font>
+       </RadioButton>
+       <RadioButton fx:id="r4Season" layoutX="582.0" layoutY="620.0" style="-fx-font-size: 27;" text="winter">
+           <toggleGroup>
+               <fx:reference source="tgSeason" />
+           </toggleGroup>
+         <font>
+            <Font size="13.0" />
+         </font>
+       </RadioButton>
+       <RadioButton fx:id="r3Season" layoutX="470.0" layoutY="620.0" style="-fx-font-size: 27;" text="fall">
+           <toggleGroup>
+               <fx:reference source="tgSeason" />
+           </toggleGroup>
+         <font>
+            <Font size="13.0" />
+         </font>
+       </RadioButton>
+
+       <RadioButton fx:id="r3Diff" layoutX="533.0" layoutY="328.0" style="-fx-font-size: 27;" text="HARD">
+       <toggleGroup>
+           <ToggleGroup fx:id="tgDiff" />
+       </toggleGroup>
+         <font>
+            <Font size="13.0" />
+         </font>
+        </RadioButton>
+       <RadioButton fx:id="r1Diff" layoutX="275.0" layoutY="328.0" style="-fx-font-size: 27;" text="EASY">
+         <toggleGroup>
+             <fx:reference source="tgDiff" />
+         </toggleGroup>
+         <font>
+            <Font size="13.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="r2Diff" layoutX="385.0" layoutY="328.0" style="-fx-font-size: 27;" text="Medium">
+          <toggleGroup>
+              <fx:reference source="tgDiff" />
+          </toggleGroup>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+
+      <Group layoutX="335.0" layoutY="188.0">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="285.0" layoutX="-7.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/diffbg.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="41.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="DIFFICULTY">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <TextField fx:id="nametf" layoutX="348.0" layoutY="170.0" prefHeight="45.0" prefWidth="205.0" promptText="New Life New Name " styleClass="text">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToStart" prefHeight="63.0" prefWidth="156.0" style="-fx-font-size: 27; -fx-background-color: transparent;" text="Back" textFill="WHITE">
+          <graphic>
+              <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../../images/arrowl.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <Button fx:id="next" contentDisplay="RIGHT" layoutX="752.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToFarm" prefHeight="63.0" prefWidth="156.0" style="-fx-font-size: 27; -fx-background-color: transparent;" text="NEXT" textFill="WHITE">
+         <graphic>
+            <ImageView id="next" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/arrowr.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label id="message" fx:id="message" alignment="CENTER" layoutX="297.0" layoutY="24.0" prefHeight="45.0" prefWidth="308.0" style="-fx-font-size: 40;" text="Welcome" textFill="#e9c46a" />
+   </children>
+</AnchorPane>

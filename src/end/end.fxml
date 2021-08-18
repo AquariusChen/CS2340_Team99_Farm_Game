@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="922.0" stylesheets="@../cssFiles/setFont.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.end.EndController">
+   <children>
+      <ImageView fitHeight="705.0" fitWidth="938.0" layoutX="-9.0" layoutY="-4.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../images/background4.png" />
+         </image>
+      </ImageView>
+      <Line endX="170.0" layoutX="483.0" layoutY="291.0" opacity="0.42" startX="-170.0" stroke="BLACK" strokeWidth="2.0" />
+      <Text fill="BLACK" layoutX="317.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="welcome_title" text=" O   V   E   R" textAlignment="CENTER">
+         <font>
+            <Font name="swfit_slm_fw" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="BLACK" layoutX="289.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="welcome_title" text=" G   A   M   E" textAlignment="CENTER" wrappingWidth="396.623779296875">
+         <font>
+            <Font name="swfit_slm_fw" size="40.0" />
+         </font>
+      </Text>
+      <Button id="restart" fx:id="restart" alignment="CENTER" contentDisplay="CENTER" depthTest="ENABLE" layoutX="387.0" layoutY="603.0" mnemonicParsing="false" onAction="#goToWelcome" prefHeight="68.0" prefWidth="192.0" style="-fx-background-color: transparent; -fx-font-size: 30;" text="= RESTART =" textAlignment="CENTER" textFill="BLACK" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="357.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="welcome_title" text="You run out of money   With no seeds left   With no crops on farm" textAlignment="CENTER" wrappingWidth="260.13671875">
+         <font>
+            <Font name="swfit_slm_fw" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

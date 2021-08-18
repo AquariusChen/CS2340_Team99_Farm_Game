@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="922.0" stylesheets="@../cssFiles/setFont.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.market.MarketController">
+   <children>
+      <ImageView fitHeight="744.0" fitWidth="953.0" layoutX="-20.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true" style="-fx-font-size: 18; -fx-background-color: white;">
+         <image>
+            <Image url="@../../images/MarketBKG.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="169.0" prefHeight="716.0" prefWidth="240.0">
+         <children>
+            <ImageView fitHeight="374.0" fitWidth="473.0" layoutX="98.0" layoutY="374.0" opacity="0.9" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../images/background4.png" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="buyR" blendMode="HARD_LIGHT" layoutX="265.0" layoutY="461.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="113.0" style="-fx-font-size: 20;" text="Radish">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="buyE" blendMode="HARD_LIGHT" layoutX="266.0" layoutY="556.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" style="-fx-font-size: 20;" text="Eggplant">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="buyW" blendMode="HARD_LIGHT" layoutX="236.0" layoutY="510.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" style="-fx-font-size: 20;" text="Watermelon">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <Text layoutX="177.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" styleClass="text" text="Seed Type" wrappingWidth="123.47265625" />
+            <Text fx:id="rBuyPrice" layoutX="468.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="2" wrappingWidth="34.240234375">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <Text fx:id="eBuyPrice" layoutX="468.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="3" wrappingWidth="34.240234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="wBuyPrice" layoutX="468.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="5" wrappingWidth="34.240234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="273.0" fitWidth="43.0" layoutX="170.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/plants/allSeeds.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="263.0" fitWidth="50.0" layoutX="424.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/coin_3.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="177.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" styleClass="text" text="Item List" wrappingWidth="123.47265625" />
+            <CheckBox fx:id="sellR" blendMode="HARD_LIGHT" layoutX="317.0" layoutY="76.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="113.0" style="-fx-font-size: 20;" text="Radish">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <Text fx:id="rSellPrice" layoutX="515.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="10" wrappingWidth="24.43695068359375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="sellE" blendMode="HARD_LIGHT" layoutX="318.0" layoutY="170.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="113.0" style="-fx-font-size: 20;" text="Eggplant">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <Text fx:id="eSellPrice" layoutX="516.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="15" wrappingWidth="34.240234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="sellW" blendMode="HARD_LIGHT" layoutX="256.0" layoutY="122.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="174.0" style="-fx-font-size: 20;" text="Watermelon">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <Text fx:id="wSellPrice" layoutX="515.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="20" wrappingWidth="34.240234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="sellRS" blendMode="HARD_LIGHT" layoutX="272.0" layoutY="223.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="159.0" style="-fx-font-size: 20;" text="Radish seed">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <Text fx:id="rsSellPrice" layoutX="516.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="1" wrappingWidth="34.240234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="sellES" blendMode="HARD_LIGHT" layoutX="272.0" layoutY="301.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="159.0" style="-fx-font-size: 20;" text="eggplant seed">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <Text fx:id="esSellPrice" layoutX="516.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="1" wrappingWidth="34.240234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="252.0" fitWidth="43.0" layoutX="470.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/coin_six.png" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="sellWS" blendMode="HARD_LIGHT" layoutX="239.0" layoutY="262.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="192.0" style="-fx-font-size: 20;" text="watermelon seed">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <Text fx:id="wsSellPrice" layoutX="516.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="1" wrappingWidth="34.240234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="266.0" fitWidth="47.0" layoutX="202.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/plants/AllPlants.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="buy" layoutX="418.0" layoutY="394.0" mnemonicParsing="false" onAction="#buySeed" prefHeight="30.0" prefWidth="73.0" style="-fx-font-size: 25; -fx-background-color: white;" text="BUY">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="watermelonSeedQuantity" layoutX="175.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="3" wrappingWidth="34.240234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="eggplantSeedQuantity" layoutX="175.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="3" wrappingWidth="34.240234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="radishSeedQuantity" layoutX="175.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="3" wrappingWidth="34.240234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="watermelonQuantity" layoutX="175.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="3" wrappingWidth="34.240234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="eggplantQuantity" layoutX="175.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="3" wrappingWidth="34.240234375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="radishQuantity" layoutX="174.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="3" wrappingWidth="24.43695068359375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text fx:id="warning" fill="#d7330a" layoutX="254.0" layoutY="622.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" styleClass="text" wrappingWidth="650.240234375" />
+      <ImageView fitHeight="62.0" fitWidth="52.0" layoutX="38.0" layoutY="612.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/money.png" />
+         </image>
+      </ImageView>
+      <Text id="money" fx:id="marketMoney" layoutX="90.0" layoutY="656.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="500" wrappingWidth="72.7451171875">
+         <font>
+            <Font name="Game Continue 03" size="34.0" />
+         </font>
+      </Text>
+      <Text layoutX="765.0" layoutY="325.0" rotate="-5.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="FARM" wrappingWidth="49.62109375">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="backFarm" layoutX="743.0" layoutY="296.0" mnemonicParsing="false" onAction="#goToFarm" prefHeight="37.0" prefWidth="99.0" style="-fx-background-color: transparent;" styleClass="text">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="447.0" fitWidth="384.0" layoutX="324.0" layoutY="-266.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../images/background3.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="sell" layoutX="614.0" layoutY="14.0" mnemonicParsing="false" onAction="#sell" style="-fx-background-color: white; -fx-font-size: 25;" styleClass="text" text="Sell">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="moneywarning" fill="#d75353" layoutX="38.0" layoutY="608.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" styleClass="text" wrappingWidth="261.240234375" />
+      <Text fx:id="lsWage" layoutX="250.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" styleClass="text" text="0" wrappingWidth="174.0" />
+      <Text fx:id="hsWage" layoutX="250.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 17;" styleClass="text" text="0" wrappingWidth="174.0" />
+      <ImageView fitHeight="30.0" fitWidth="43.0" layoutX="210.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/money.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="43.0" layoutX="210.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/money.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="lowSkill" layoutX="57.0" layoutY="448.0" style="-fx-font-size: 15;" text="Low Skill Worker">
+         <toggleGroup>
+            <ToggleGroup fx:id="tgWorker" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="highSkill" layoutX="57.0" layoutY="470.0" style="-fx-font-size: 15;" text="High Skill Worker">
+         <toggleGroup>
+            <fx:reference source="tgWorker" />
+         </toggleGroup>
+      </RadioButton>
+      <CheckBox id="fertilizer" fx:id="fertilizer" blendMode="HARD_LIGHT" layoutX="57.0" layoutY="407.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="112.0" style="-fx-font-size: 17;" text="Fertilizer">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <ImageView fitHeight="61.0" fitWidth="66.0" layoutX="113.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/M5/fertilizer.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="fertilizerPrice" layoutX="145.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="1" wrappingWidth="34.240234375">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="30.0" fitWidth="43.0" layoutX="113.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/money.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="hire" layoutX="110.0" layoutY="506.0" mnemonicParsing="false" onAction="#toHireWorker" style="-fx-background-color: white; -fx-font-size: 15;" text="Hire for 1 DAY" />
+      <ImageView fitHeight="30.0" fitWidth="43.0" layoutX="184.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/money.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="pesticidePrice" layoutX="216.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="1" wrappingWidth="34.240234375">
+         <font>
+            <Font size="17.0" />
+         </font>x
+      </Text>
+      <ImageView fitHeight="61.0" fitWidth="66.0" layoutX="190.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true" rotate="-18.4">
+         <image>
+            <Image url="@../../images/M5/pesticide.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="pesticideBox" blendMode="HARD_LIGHT" layoutX="167.0" layoutY="407.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="112.0" style="-fx-font-size: 17;" text="Pesticide">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <Button id="buyTool" fx:id="buyTool" layoutX="109.0" layoutY="545.0" mnemonicParsing="false" onAction="#buyTools" style="-fx-background-color: white; -fx-font-size: 15;" text="buy tool" />
+      <ImageView fitHeight="163.0" fitWidth="123.0" layoutX="764.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/waterpump.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="irrigation" blendMode="HARD_LIGHT" layoutX="737.0" layoutY="552.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="112.0" style="-fx-font-size: 17;" text="Irrigation">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <Text fx:id="irrigationSell" layoutX="886.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="50" wrappingWidth="34.240234375">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="30.0" fitWidth="43.0" layoutX="854.0" layoutY="559.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/money.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="99.0" layoutX="764.0" layoutY="594.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/tractor.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="tractorBox" blendMode="HARD_LIGHT" layoutX="736.0" layoutY="652.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="112.0" style="-fx-font-size: 17;" text="Tractor">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <ImageView fitHeight="30.0" fitWidth="43.0" layoutX="854.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/money.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="tractorSell" layoutX="884.0" layoutY="678.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="50" wrappingWidth="34.240234375">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
