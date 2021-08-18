@@ -2,6 +2,7 @@
 Welcome to the home page of CS2340 Team 99 -- 4399 Farm. \
 Our team members and their contact info are listed below. \
 Hope you enjoy our game:) 
+https://www.youtube.com/watch?v=UkYdbprS4hY
 
 ### Repo Structure
 src - source code
